@@ -1,18 +1,18 @@
 %include	/usr/lib/rpm/macros.php
 %define         _class          XML
 %define         _subclass       Wddx
-%define		_status		beta
+%define		_status		stable
 %define		_pearname	%{_class}_%{_subclass}
 
 Summary:	%{_pearname} - Wddx pretty serializer and deserializer
 Summary(pl):	%{_pearname} - przyzwoity serializer i deserializer Wddx
 Name:		php-pear-%{_pearname}
-Version:	0.2
+Version:	1.0.0
 Release:	1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	e2f443fbb0bbb2d9df6cb4a9d139150d
+# Source0-md5:	37e6c3b0a2fe513a060c7c41b45775ec
 URL:		http://pear.php.net/package/XML_Wddx/
 BuildRequires:	rpm-php-pearprov >= 4.0.2-98
 Requires:	php-pear
