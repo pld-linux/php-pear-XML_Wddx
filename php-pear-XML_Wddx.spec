@@ -36,7 +36,7 @@ deserializer will use wddx_deserialize if it is built in.
 No support for recordsets is available at present in the PHP version
 of the deserializer.
 
-This class has in PEAR status: %{_status}.
+In PEAR status of this package is: %{_status}.
 
 %description -l pl
 XML_Wddx robi dwie rzeczy:
