@@ -5,7 +5,7 @@
 %define		_pearname	%{_class}_%{_subclass}
 
 Summary:	%{_pearname} - Wddx pretty serializer and deserializer
-#Summary(pl):	%{_pearname} -
+Summary(pl):	%{_pearname} - przyzwoity serializer i deserializer Wddx
 Name:		php-pear-%{_pearname}
 Version:	0.2
 Release:	1
@@ -21,7 +21,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 XML_Wddx does 2 things:
-- a drop in replacement for the XML_Wddx extension (if it's not built in)
+- a drop in replacement for the XML_Wddx extension (if it's not built
+  in)
 - produce an editable wddx file (with indenting etc.) and uses CDATA,
   rather than char tags
 
@@ -37,10 +38,23 @@ of the deserializer.
 
 This class has in PEAR status: %{_status}.
 
-#%description -l pl
-#...
-#
-#Ta klasa ma w PEAR status: %{_status}.
+%description -l pl
+XML_Wddx robi dwie rzeczy:
+- zastêpuje rozszerzenie XML_Wddx (je¶li nie jest wbudowane)
+- tworzy edytowalny plik wddx (z wciêciami itp.) i u¿ywa CDATA zamiast
+  znaczników znakowych
+
+Ten pakiet zawiera 2 statyczne metody:
+- XML_Wddx:serialize($value)
+- XML_Wddx:deserialize($value)
+
+i powinien byæ w 90% kompatybilny z wddx_deserialize(), a deserializer
+bêdzie u¿ywa³ wddx_deserialize je¶li zosta³o wbudowane.
+
+Aktualnie nie ma obs³ugi dla zbiorów rekordów w wersji PHP
+deserializera.
+
+Ta klasa ma w PEAR status: %{_status}.
 
 %prep
 %setup -q -c
