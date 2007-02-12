@@ -5,7 +5,7 @@
 %define		_pearname	%{_class}_%{_subclass}
 
 Summary:	%{_pearname} - Wddx pretty serializer and deserializer
-Summary(pl.UTF-8):   %{_pearname} - przyzwoity serializer i deserializer Wddx
+Summary(pl.UTF-8):	%{_pearname} - przyzwoity serializer i deserializer Wddx
 Name:		php-pear-%{_pearname}
 Version:	1.0.1
 Release:	2
