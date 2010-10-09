@@ -7,12 +7,12 @@
 Summary:	%{_pearname} - Wddx pretty serializer and deserializer
 Summary(pl.UTF-8):	%{_pearname} - przyzwoity serializer i deserializer Wddx
 Name:		php-pear-%{_pearname}
-Version:	1.0.1
-Release:	3
+Version:	1.0.2
+Release:	1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	6512882461a3b9da49382be1baf1f1e3
+# Source0-md5:	117e6471762ebdaf033d47e36a2b6aeb
 URL:		http://pear.php.net/package/XML_Wddx/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
